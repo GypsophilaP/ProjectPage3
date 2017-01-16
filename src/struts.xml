@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <package name="default" extends="struts-default">
+        <action name="define" class="com.page.struts2.DeviceData" method="define">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="safeAddressAction" class="com.page.struts2.register" method="safeAddressAction">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="ThreadPool" class="com.page.struts2.register" method="ThreadPool">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="testRegister" class="com.page.struts2.register" method="testRegister">
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="manager" class="com.page.struts2.register" method="manager">
+            <result name="success">/manager.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="start" class="com.page.struts2.register" method="start">
+                <result name="success">/manager.jsp</result>
+                <result name="error">/error.jsp</result>
+        </action>
+    </package>
+</struts>
